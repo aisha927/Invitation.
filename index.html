@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Invitation ♡</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #fffaf0;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #805b63;
+}
+
+.invitation {
+  width: 100%;
+  max-width: 650px;
+  min-height: 850px;
+  background-color: #fffaf0;
+  background-image: url("https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=1200");
+  background-size: cover;
+  background-position: center;
+  border: 8px double #e9d7bd;
+  text-align: center;
+  padding: 100px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.invitation::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 250, 240, 0.86);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.decor {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: clamp(38px, 8vw, 58px);
+  font-weight: normal;
+  line-height: 1.15;
+  margin: 25px 0;
+  color: #875e69;
+}
+
+.line {
+  width: 70px;
+  border-top: 1px solid #c9a58c;
+  margin: 25px auto;
+}
+
+.date {
+  font-size: 29px;
+  margin: 15px 0;
+}
+
+.time {
+  font-size: 21px;
+  margin: 10px 0 30px;
+}
+
+.place {
+  font-size: 32px;
+  margin: 15px 0 5px;
+}
+
+.city {
+  letter-spacing: 4px;
+  font-size: 15px;
+  color: #a27b79;
+}
+
+.map-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 13px 30px;
+  background: #a27b79;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.map-button:hover {
+  background: #805b63;
+  transform: scale(1.05);
+}
+
+.footer {
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 35px;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0;
+  }
+
+  .invitation {
+    min-height: 100vh;
+    border: none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="invitation">
+  <div class="content">
+
+    <div class="decor">✿ ♡ ✿</div>
+
+    <h1>
+      YOU ARE WARMLY<br>
+      INVITED TO MY<br>
+      B-DAY PARTY
+    </h1>
+
+    <div class="line"></div>
+
+    <p class="date">
+      15 November 2026
+    </p>
+
+    <p class="time">
+      At 1:00 PM
+    </p>
+
+    <div class="line"></div>
+
+    <p class="place">
+      Kashgar Café
+    </p>
+
+    <p class="city">
+      ASTANA
+    </p>
+
+    <a
+      class="map-button"
+      href="https://2gis.kz/astana/geo/70000001059710870?inv_by=a01556e091984f0cb332e5fda0e0e8d1&inv_ts=1794328458"
+      target="_blank"
+      rel="noopener noreferrer">
+      Find us on 2GIS ♡
+    </a>
+
+    <p class="footer">
+      Can't wait to see you!
+    </p>
+
+    <div class="decor">🌷 🪩 🌷</div>
+
+  </div>
+</div>
+
+</body>
+</html>
